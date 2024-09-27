@@ -1,11 +1,3 @@
-// Variables
-//
-// Variables should follow the `$component-state-property-size` formula for
-// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
-
-// Color system
-
-// scss-docs-start gray-color-variables
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
@@ -17,10 +9,7 @@ $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
-// scss-docs-end gray-color-variables
 
-// fusv-disable
-// scss-docs-start gray-colors-map
 $grays: (
   "100": $gray-100,
   "200": $gray-200,
@@ -32,10 +21,6 @@ $grays: (
   "800": $gray-800,
   "900": $gray-900
 ) !default;
-// scss-docs-end gray-colors-map
-// fusv-enable
-
-// scss-docs-start color-variables
 $blue:    #0d6efd !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
@@ -46,9 +31,7 @@ $yellow:  #ffc107 !default;
 $green:   #198754 !default;
 $teal:    #20c997 !default;
 $cyan:    #0dcaf0 !default;
-// scss-docs-end color-variables
 
-// scss-docs-start colors-map
 $colors: (
   "blue":       $blue,
   "indigo":     $indigo,
@@ -64,9 +47,7 @@ $colors: (
   "gray":       $gray-600,
   "gray-dark":  $gray-800
 ) !default;
-// scss-docs-end colors-map
 
-// scss-docs-start theme-color-variables
 $primary:       $blue !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
@@ -75,9 +56,7 @@ $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
-// scss-docs-end theme-color-variables
 
-// scss-docs-start theme-colors-map
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
@@ -88,13 +67,9 @@ $theme-colors: (
   "light":      $light,
   "dark":       $dark
 ) !default;
-// scss-docs-end theme-colors-map
 
-// The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
-// See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast
 $min-contrast-ratio:   4.5 !default;
 
-// Customize the light and dark text colors for use in our color contrast function.
 $color-contrast-dark:      $black !default;
 $color-contrast-light:     $white !default;
 
@@ -198,9 +173,7 @@ $cyan-600: shade-color($cyan, 20%) !default;
 $cyan-700: shade-color($cyan, 40%) !default;
 $cyan-800: shade-color($cyan, 60%) !default;
 $cyan-900: shade-color($cyan, 80%) !default;
-// fusv-enable
 
-// Characters which are escaped by the escape-svg function
 $escaped-characters: (
   ("<", "%3c"),
   (">", "%3e"),
@@ -209,9 +182,6 @@ $escaped-characters: (
   (")", "%29"),
 ) !default;
 
-// Options
-//
-// Quickly modify global styling by enabling or disabling optional features.
 
 $enable-caret:                true !default;
 $enable-rounded:              true !default;
@@ -228,25 +198,12 @@ $enable-negative-margins:     false !default;
 $enable-deprecation-messages: true !default;
 $enable-important-utilities:  true !default;
 
-// Prefix for :root CSS variables
 
 $variable-prefix:             bs- !default;
 
-// Gradient
-//
-// The gradient which is added to components if `$enable-gradients` is `true`
-// This gradient is also added to elements with `.bg-gradient`
-// scss-docs-start variable-gradient
+
 $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
-// scss-docs-end variable-gradient
 
-// Spacing
-//
-// Control the default styling of most Bootstrap elements by modifying these
-// variables. Mostly focused on spacing.
-// You can add more entries to the $spacers map, should you need more variation.
-
-// scss-docs-start spacer-variables-maps
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
@@ -258,32 +215,19 @@ $spacers: (
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
-// scss-docs-end spacer-variables-maps
 
-// Position
-//
-// Define the edge positioning anchors of the position utilities.
-
-// scss-docs-start position-map
 $position-values: (
   0: 0,
   50: 50%,
   100: 100%
 ) !default;
-// scss-docs-end position-map
 
-// Body
-//
-// Settings for the `<body>` element.
 
 $body-bg:                   $white !default;
 $body-color:                $gray-900 !default;
 $body-text-align:           null !default;
 
 
-// Links
-//
-// Style anchor elements.
 
 $link-color:                              $primary !default;
 $link-decoration:                         underline !default;
@@ -294,19 +238,11 @@ $link-hover-decoration:                   null !default;
 $stretched-link-pseudo-element:           after !default;
 $stretched-link-z-index:                  1 !default;
 
-// Paragraphs
-//
-// Style p element.
+
 
 $paragraph-margin-bottom:   1rem !default;
 
 
-// Grid breakpoints
-//
-// Define the minimum dimensions at which your layout will change,
-// adapting to different screen sizes, for use in media queries.
-
-// scss-docs-start grid-breakpoints
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
