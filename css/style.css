@@ -508,10 +508,6 @@ h6,
   box-sizing: border-box;
 }
 
-img {
-  display: block;
-}
-
 .gallery {
   position: relative;
   z-index: 2;
@@ -641,6 +637,7 @@ img {
   width: 100%;
   height: 100%;
 }
+
 
 @-webkit-keyframes poppy {
   0% {
@@ -985,4 +982,13 @@ img {
   .card-deck {
       flex-direction: column;
   }
+}
+
+.facility-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.facility-icon .fi {
+  margin: 0 5px; /* Espaçamento entre as bandeiras */
 }
